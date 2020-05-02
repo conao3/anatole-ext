@@ -1,6 +1,11 @@
 baseURL = "https://lisp.netlify.app"
 languageCode = "en-us"
 title = "Hugo Blog"
+enableEmoji = true
+enableInlineShortcodes = true
+enableGitInfo = true
+hasCJKLanguage = true
+googleAnalytics = "UA-165099679-2"
 
 [permalinks]
   blog = "/:filename/"
