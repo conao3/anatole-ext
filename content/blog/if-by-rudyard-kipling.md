@@ -5,6 +5,26 @@ tags: ["poetry", "life"]
 draft: false
 ---
 
+```java
+public class Main {
+    public static void main(String... args) {
+       System.out.println("Hello");
+    }
+}
+```
+
+{{< highlight java "linenos=table, hl_lines=3" >}}
+public class Main {
+    public static void main(String... args) {
+       System.out.println("Hello");
+    }
+}
+{{< /highlight >}}
+
+{{< time.inline >}}{{ now }}{{< /time.inline >}}
+{{< youtube 09jf3ow9jfw >}}
+
+$$F(x) = \sum_{n=1}^{N} \frac{1}{N}$$
 
 If you can keep your head when all about you  
 Are losing theirs and blaming it on you,  
