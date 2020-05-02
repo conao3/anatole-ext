@@ -26,9 +26,30 @@ googleAnalytics = "UA-165099679-2"
     url = "/tags/"
     weight = 3
 
+## Social links
+[[params.socialIcons]]
+  icon = "fa-linkedin"
+  title = "Linkedin"
+  url = "https://de.linkedin.com/"
+
+[[params.socialIcons]]
+  icon = "fa-github"
+  title = "GitHub"
+  url = "https://github.com/lxndrblz/anatole/"
+
+[[params.socialIcons]]
+  icon = "fa-instagram"
+  title = "instagram"
+  url = "https://www.instagram.com/"
+
+[[params.socialIcons]]
+  icon = "fa-envelope"
+  title = "e-mail"
+  url = "mailto:mail@alexbilz.com"
+
 [params.math]
-global = false  # options: true, false. Enable math support globally, default: false. You can always enable math on per page.
-engine = "katex"  # options: "katex", "mathjax". default is "mathjax".
+  global = false  # options: true, false. Enable math support globally, default: false. You can always enable math on per page.
+  engine = "katex"  # options: "katex", "mathjax". default is "mathjax".
 
 [params]
   homeText = "You just made a Hugo blog from scratch."
