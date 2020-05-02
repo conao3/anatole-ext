@@ -14,7 +14,11 @@
 {{ end }}
 {{ end }}
 
-<br><br>
+<br>
+<br>
+
+{{ .TableOfContents }}
+
 {{ .Content }}
 
 {{ $related := .Site.RegularPages.Related . | first 5 }}
