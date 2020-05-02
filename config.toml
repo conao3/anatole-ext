@@ -26,6 +26,10 @@ googleAnalytics = "UA-165099679-2"
     url = "/tags/"
     weight = 3
 
+[params.math]
+global = false  # options: true, false. Enable math support globally, default: false. You can always enable math on per page.
+engine = "katex"  # options: "katex", "mathjax". default is "mathjax".
+
 [params]
   homeText = "You just made a Hugo blog from scratch."
   Copyright = "CC0"

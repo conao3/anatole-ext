@@ -3,6 +3,7 @@ title: "If by Rudyard Kipling"
 date: 2020-05-01T14:47:17+09:00
 tags: ["poetry", "life"]
 draft: false
+math: true
 ---
 
 ```java
