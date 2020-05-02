@@ -1,8 +1,15 @@
 {{ define "main" }}
 
-<div id="home-jumbotron" class="jumbotron text-center">
-    <h1>{{ .Site.Title }}</h1>
-    <p>{{ .Site.Params.homeText | markdownify }}</p>
-</div>
+<h1>{{ .Site.Title }}</h1>
+
+{{ range first 10 .Site.RegularPages }}
+{{ if eq .Type "blog"}}
+<h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+{{ .Summary }}
+{{ if .Truncated }}
+<a href="{{ .RelPermalink }}">Read More…</a>
+{{ end }}
+{{ end }}
+{{ end }}
 
 {{ end }}

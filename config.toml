@@ -1,6 +1,6 @@
 baseURL = "https://lisp.netlify.app"
 languageCode = "en-us"
-title = "Hugo Blog"
+title = "Hiroshima.lisp"
 enableEmoji = true
 enableInlineShortcodes = true
 enableGitInfo = true
