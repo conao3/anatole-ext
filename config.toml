@@ -52,7 +52,7 @@ googleAnalytics = "UA-165099679-2"
   engine = "katex"  # options: "katex", "mathjax". default is "mathjax".
 
 [params]
-  homeText = "You just made a Hugo blog from scratch."
+  description = "広島大学を中心に活動するLispコミュニティ"
   Copyright = "CC0"
 
 [taxonomies]
