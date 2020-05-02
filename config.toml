@@ -28,6 +28,7 @@ googleAnalytics = "UA-165099679-2"
 
 [params]
   homeText = "You just made a Hugo blog from scratch."
+  Copyright = "CC0"
 
 [taxonomies]
   tag = "tags"
