@@ -1,13 +1,13 @@
-{{ define "main" }}
+{{ define "main" -}}
 
-{{ range first 10 .Site.RegularPages }}
-{{ if eq .Type "blog"}}
+{{ range first 10 .Site.RegularPages -}}
+{{ if eq .Type "blog" -}}
 <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-{{ .Summary }}
-{{ if .Truncated }}
+{{ .Summary -}}
+{{ if .Truncated -}}
 <a href="{{ .RelPermalink }}">Read More…</a>
-{{ end }}
-{{ end }}
-{{ end }}
+{{ end -}}
+{{ end -}}
+{{ end -}}
 
-{{ end }}
+{{ end -}}

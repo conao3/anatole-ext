@@ -1,34 +1,35 @@
-{{ define "main" }}
+{{ define "main" -}}
 
 <h1>{{ .Title }}</h1>
 
-{{ $dateTime := .PublishDate.Format "2000-01-01" }}
-{{ $dateFormat := .Site.Params.dateFormat | default "Jan 1, 2000" }}
-<i data-feather="calendar"></i> <time datetime="{{ $dateTime }}">{{ .PublishDate.Format $dateFormat }}</time>
-{{ with .Params.tags }}
+{{ $dateTime := .PublishDate.Format "2006-01-02" -}}
+{{ $dateFormat := .Site.Params.dateFormat | default "Jan 2, 2006" -}}
+<i data-feather="calendar"></i>
+<time datetime="{{ $dateTime }}">{{ .PublishDate.Format $dateFormat }}</time>
+{{ with .Params.tags -}}
 <br>
 <i data-feather="tag"></i>
-{{ range . }}
-{{ $href := print (absURL "tags/") (urlize .) }}
+{{ range . -}}
+{{ $href := print (absURL "tags/") (urlize .) -}}
 <a class="btn btn-sm btn-outline-dark tag-btn" href="{{ $href }}">{{ . }}</a>
-{{ end }}
-{{ end }}
+{{ end -}}
+{{ end -}}
 
 <br>
 <br>
 
-{{ .TableOfContents }}
+{{ .TableOfContents -}}
 
-{{ .Content }}
+{{ .Content -}}
 
-{{ $related := .Site.RegularPages.Related . | first 5 }}
-{{ with $related }}
+{{ $related := .Site.RegularPages.Related . | first 5 -}}
+{{ with $related -}}
 <h3>See Also</h3>
 <ul>
-    {{ range . }}
+    {{ range . -}}
     <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
-    {{ end }}
+    {{ end -}}
 </ul>
-{{ end }}
+{{ end -}}
 
-{{ end }}
+{{ end -}}

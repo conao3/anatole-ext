@@ -1,8 +1,8 @@
 <!doctype html>
 <html lang="en">
-    {{ partial "head.html" . }}
+    {{ partial "head.html" . -}}
     <body class="container-fluid">
-        {{ partial "header.html" . }}
+        {{ partial "header.html" . -}}
         <main>
             <div class="row">
                 <div class="col-md-4">
@@ -11,19 +11,18 @@
                         <h1 class="home"><a href="/">{{ .Site.Title }}</a></h1>
                     </div>
                 </div>
-
                 <div class="col-md-8">
                     <nav class="nav justify-content-center">
-                        {{ range .Site.Menus.main }}
-                        {{ $icon := printf "<i data-feather=\"%s\"></i>" .Pre }}
-                        {{ $text := print $icon " " .Name | safeHTML }}
+                        {{ range .Site.Menus.main -}}
+                        {{ $icon := printf "<i data-feather=\"%s\"></i>" .Pre -}}
+                        {{ $text := print $icon " " .Name | safeHTML -}}
                         <a class="nav-link" href="{{ .URL }}">{{ $text }}</a>
-                        {{ end }}
+                        {{ end -}}
                     </nav>
-                    {{ block "main" . }}{{ end }}
+                    {{ block "main" . -}}{{ end -}}
                 </div>
             </div>
         </main>
-        {{ partial "footer.html" . }}
+        {{ partial "footer.html" . -}}
     </body>
 </html>
