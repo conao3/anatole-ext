@@ -1,6 +1,9 @@
 {{ define "main" }}
 
-<h1>{{ .Site.Title }}</h1>
+<div class="title">
+    <img class="logo" src="images/logo.svg">
+    <a href="/"><h1 class="home">{{ .Site.Title }}</h1></a>
+</div>
 
 {{ range first 10 .Site.RegularPages }}
 {{ if eq .Type "blog"}}

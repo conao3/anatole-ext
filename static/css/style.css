@@ -1,7 +1,15 @@
 body {
     color: rgba(0, 0, 0, 0.8);
     font-family: 'Verdana', sans-serif;
-    font-size: 15px;
-    width: 100%;
     margin: 0 auto 30px auto;
+}
+
+.title h1.home {
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 2em;
+}
+
+.title img.logo {
+    width:127px;
+    border-radius:50%;
 }
