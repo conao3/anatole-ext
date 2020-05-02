@@ -7,9 +7,6 @@ enableGitInfo = true
 hasCJKLanguage = true
 googleAnalytics = "UA-165099679-2"
 
-[permalinks]
-  blog = "/:filename/"
-
 # See https://feathericons.com/
 # The value of pre is the icon name
 [menu]
