@@ -10,6 +10,13 @@
                         <img class="logo" src="/images/logo.svg">
                         <h1 class="home"><a href="/">{{ .Site.Title }}</a></h1>
                     </div>
+                    <ul class="social-links">
+                        {{ range $item := .Site.Params.socialIcons -}}
+                        <a href="{{ $item.url }}" rel="me" >
+                            <i class="fa {{ $item.icon }}" aria-hidden="true" title="{{ $item.title }}"></i>
+                        </a>
+                        {{ end -}}
+                    </ul>
                 </div>
                 <div class="col-md-8">
                     <nav class="nav justify-content-center">
