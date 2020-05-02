@@ -1,10 +1,30 @@
 <!doctype html>
 <html lang="en">
     {{ partial "head.html" . }}
-    <body>
+    <body class="container-fluid">
         {{ partial "header.html" . }}
-        <main class="container">
-            {{ block "main" . }}{{ end }}
+        <main>
+            <div class="row">
+                <div class="col">
+                    <div class="sidebar">
+                        <div class="title">
+                            <img class="logo" src="images/logo.svg">
+                            <a href="/"><h1 class="home">{{ .Site.Title }}</h1></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <nav class="nav justify-content-center">
+                        {{ range .Site.Menus.main }}
+                        {{ $icon := printf "<i data-feather=\"%s\"></i>" .Pre }}
+                        {{ $text := print $icon " " .Name | safeHTML }}
+                        <a class="nav-link" href="{{ .URL }}">{{ $text }}</a>
+                        {{ end }}
+                    </nav>
+                    {{ block "main" . }}{{ end }}
+                </div>
+            </div>
         </main>
         {{ partial "footer.html" . }}
     </body>
