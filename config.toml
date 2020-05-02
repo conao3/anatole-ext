@@ -7,24 +7,9 @@ enableGitInfo = true
 hasCJKLanguage = true
 googleAnalytics = "UA-165099679-2"
 
-# See https://feathericons.com/
-# The value of pre is the icon name
-[menu]
-  [[menu.main]]
-    name = "Home"
-    pre = "home"
-    url = "/"
-    weight = 1
-  [[menu.main]]
-    name = "Blog"
-    pre = "edit"
-    url = "/blog/"
-    weight = 2
-  [[menu.main]]
-    name = "Tags"
-    pre = "tag"
-    url = "/tags/"
-    weight = 3
+[params]
+  description = "広島大学を中心に活動するLispコミュニティ"
+  Copyright = "CC0"
 
 ## Social links
 [[params.socialIcons]]
@@ -51,9 +36,24 @@ googleAnalytics = "UA-165099679-2"
   global = false  # options: true, false. Enable math support globally, default: false. You can always enable math on per page.
   engine = "katex"  # options: "katex", "mathjax". default is "mathjax".
 
-[params]
-  description = "広島大学を中心に活動するLispコミュニティ"
-  Copyright = "CC0"
+# See https://feathericons.com/
+# The value of pre is the icon name
+[menu]
+  [[menu.main]]
+    name = "Home"
+    pre = "home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Blog"
+    pre = "edit"
+    url = "/blog/"
+    weight = 2
+  [[menu.main]]
+    name = "Tags"
+    pre = "tag"
+    url = "/tags/"
+    weight = 3
 
 [taxonomies]
   tag = "tags"
