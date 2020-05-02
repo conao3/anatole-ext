@@ -4,12 +4,17 @@ body {
     margin: 0 auto 30px auto;
 }
 
+#sidebar-title {
+    padding-top: 240px;
+    text-align: center;
+}
+
 #sidebar-title img.logo {
     width:127px;
     border-radius:50%;
 }
 
-#sidebar-title h1.home {
+#sidebar-title h1.home a {
     color: rgba(0, 0, 0, 0.8);
-    font-size: 2em;
+    font-size: 0.8em;
 }
