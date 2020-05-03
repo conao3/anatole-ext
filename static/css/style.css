@@ -133,7 +133,7 @@ code {
 }
 
 #article-info span {
-    padding-right: 15px;
+    margin: 10px 5px;
 }
 
 #article-info .article-info-tag {
@@ -171,5 +171,9 @@ code {
 
     #content-nav {
         display: none;
+    }
+
+    #article-info span {
+        display: block;
     }
 }
