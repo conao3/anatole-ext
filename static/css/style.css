@@ -6,7 +6,6 @@ body {
 
 #sidebar-title {
     padding-top: 240px;
-    text-align: center;
 }
 
 #sidebar-title img.logo {
@@ -21,7 +20,6 @@ body {
 
 #sidebar-social-links {
     padding: 0;
-    text-align: center
 }
 
 #sidebar-social-links a {
