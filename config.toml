@@ -25,6 +25,10 @@ googleAnalytics = "UA-165099679-2"
   url = "https://twitter.com/hiroshimalisp"
 
 [[params.socialIcons]]
+  icon = "fa-slack"
+  url = "https://hiroshima-lisp.slack.com/join/shared_invite/enQtNjE0NTc5ODE0MTk3LThiZTM0MjVlMGY4ODQ4ZWQxZTIxZmViYmQ1NDIzN2JlYmNmNWNmOTA0N2I3ODdjMjdlYWU2MjZkZTBhZGU3OGQ"
+
+[[params.socialIcons]]
   icon = "fa-envelope"
   url = "/blog/mail"
 
