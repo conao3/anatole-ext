@@ -6,9 +6,7 @@
 {{ $dateFormat := .Site.Params.dateFormat | default "Jan 2, 2006" -}}
 
 <div id="article-info">
-    <span id="article-info-date">
-        Posted at — <time datetime="{{ $dateTime }}">{{ .PublishDate.Format $dateFormat }}</time>
-    </span>
+    <span class="article-info-reading-time">{{ .ReadingTime }}-minute to read</span>
     <span id="article-info-tags">
         Tags — 
         {{ with .Params.tags -}}
@@ -18,12 +16,17 @@
         {{ end -}}
         {{ end -}}
     </span>
-    <span class="article-info-reading-time">{{ .ReadingTime }}-minute to read</span>
+    <span id="article-info-date">
+        Posted at — <time datetime="{{ $dateTime }}">{{ .PublishDate.Format $dateFormat }}</time>
+    </span>
 </div>
 
+<h3>Table of contents</h3>
 {{ .TableOfContents -}}
 
+<div id="article-content">
 {{ .Content -}}
+</div>
 
 {{ $related := .Site.RegularPages.Related . | first 5 -}}
 {{ with $related -}}
