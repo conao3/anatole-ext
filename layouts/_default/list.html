@@ -1,22 +1,17 @@
 {{ define "main" -}}
 
 <h1>{{ .Title }}</h1>
-{{ range .Pages.ByPublishDate.Reverse -}}
-<p>
-    <a href="{{ .Permalink }}">{{ .Title }}</a>
-    <br>
-    {{ $dateTime := .PublishDate.Format "2006-01-02" -}}
-    {{ $dateFormat := .Site.Params.dateFormat | default "Jan 2, 2006" -}}
-    <i data-feather="calendar"></i> <time datetime="{{ $dateTime }}">{{ .PublishDate.Format $dateFormat }}</time>
-    {{ with .Params.tags }}
-    <br>
-    <i data-feather="tag"></i>
-    {{ range . -}}
-    {{ $href := print (absURL "tags/") (urlize .) -}}
-    <a class="btn btn-sm btn-outline-dark tag-btn" href="{{ $href }}">{{ . }}</a>
+<ul id="list-with-title">
+    {{ range .Data.Pages.GroupByDate "2006" -}}
+    <h3 class="listing-title">{{ .Key }}</h3>
+    {{ range .Pages -}}
+    <ul class="listing">
+        <div class="listing-post">
+            <span class="listing-title"><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></span>
+            <span class="listing-date">{{.Date.Format "Jan 2" }}</span>
+        </div>
+    </ul>
     {{ end -}}
     {{ end -}}
-</p>
-{{ end -}}
-
+</ul>
 {{ end -}}

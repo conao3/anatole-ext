@@ -72,6 +72,14 @@ code {
     margin: 40px 0;
 }
 
+#list-with-title .listing {
+    padding-left: 20px;
+}
+
+#list-with-title .listing-date {
+    float: right;
+}
+
 @media (max-width: 767px){
     #sidebar {
         width: 100%;
