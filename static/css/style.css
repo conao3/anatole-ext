@@ -18,3 +18,12 @@ body {
     color: rgba(0, 0, 0, 0.8);
     font-size: 0.8em;
 }
+
+#sidebar-social-links {
+    padding: 0;
+    text-align: center
+}
+
+#sidebar-social-links a {
+    color: rgba(0, 0, 0, 0.8);
+}
