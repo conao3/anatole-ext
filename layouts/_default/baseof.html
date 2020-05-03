@@ -8,7 +8,7 @@
                 <div id="sidebar" class="col-md-4">
                     <div id="sidebar-title">
                         <img class="logo" src="/images/logo.svg">
-                        <h1 class="home"><a href="/">{{ .Site.Title }}</a></h1>
+                        <h1><a class="home" href="/">{{ .Site.Title }}</a></h1>
                     </div>
                     <ul id="sidebar-social-links">
                         {{ range $item := .Site.Params.socialIcons -}}
@@ -24,11 +24,13 @@
                     </div>
                 </div>
                 <div id="content" class="col-md-8 offset-md-4">
-                    <nav id="content-nav" class="nav">
-                        {{ range .Site.Menus.main -}}
-                        <a class="nav-link" href="{{ .URL }}">{{ .Name }}</a>
-                        {{ end -}}
-                    </nav>
+                    <div class="content-nav-wrapper">
+                        <nav id="content-nav" class="nav">
+                            {{ range .Site.Menus.main -}}
+                            <a class="nav-link" href="{{ .URL }}">{{ .Name }}</a>
+                            {{ end -}}
+                        </nav>
+                    </div>
                     <div id="content-main">
                         {{ block "main" . -}}{{ end -}}
                     </div>
