@@ -24,7 +24,7 @@ code {
 #content {
     max-width: 1000px;
     padding-left: 2em;
-    padding-bottom: 5rem;
+    padding-bottom: 10vh;
 }
 
 #sidebar {
@@ -182,6 +182,10 @@ code {
     border-bottom: 1px solid;
 }
 
+#teams-button a{
+    margin: 0.2rem 0.1rem;
+}
+
 @media (min-width: 1200px) {
     .container-fluid {
         padding: 0 2rem;
@@ -197,7 +201,7 @@ code {
 @media (max-width: 991px) {
     h1 { font-size: 2.0rem; }
     h2 { font-size: 1.8rem; }
-    h3 { font-size: 1.7rem; }
+    h3 { font-size: 1.7rem; }    /* bootstrap default */
 
     #sidebar {
         width: 100%;
@@ -237,3 +241,42 @@ code {
         display: none;
     }
 }
+
+@media (max-width: 575px) {
+    h1 { font-size: 2.0rem; }
+    h2 { font-size: 1.7rem; }
+    h3 { font-size: 1.5rem; }
+    h4 { font-size: 1.5rem; }   /* bootstrap default */
+
+    #sidebar {
+        padding-top: 2.5rem;
+    }
+
+    #content {
+        margin-top: 15rem;
+    }
+
+    #article-listing {
+        padding-left: 0;
+    }
+
+    #article-listing .article-listing-item {
+        padding-left: 0;
+    }
+
+    #article-listing .article-listing-summary {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        text-align: justify;
+        text-justify: inter-ideograph;
+    }
+
+    #article-listing .article-listing-readmore {
+        display: none;
+    }
+
+    #article-listing .article-listing-date {
+        display: none;
+    }
+}
+
