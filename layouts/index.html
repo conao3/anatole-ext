@@ -1,13 +1,13 @@
 {{ define "main" -}}
 
-{{ range first 10 .Site.RegularPages -}}
-{{ if eq .Type "blog" -}}
-<h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-{{ .Summary -}}
-{{ if .Truncated -}}
-<a href="{{ .RelPermalink }}">Read More…</a>
-{{ end -}}
-{{ end -}}
-{{ end -}}
+<h1>{{ .Title }}</h1>
+<ul id="article-listing">
+    <h3 class="listing-title">Recent blogs</h3>
+    {{ range first 10 .Site.RegularPages -}}
+    {{ if eq .Type "blog" -}}
+    {{ partial "parts/article-listing.html" . -}}
+    {{ end -}}
+    {{ end -}}
+</ul>
 
 {{ end -}}

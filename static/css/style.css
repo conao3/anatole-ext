@@ -72,12 +72,36 @@ code {
     margin: 40px 0;
 }
 
-#list-with-title .listing {
-    padding-left: 20px;
+#article-listing {
+    padding-left: 3px;
 }
 
-#list-with-title .listing-date {
+#article-listing .article-listing-title {
+    font-size: 1.5em;
+}
+
+#article-listing .article-listing-item {
+    padding-left: 20px;
+    padding-bottom: 30px;
+}
+
+#article-listing .article-listing-date {
     float: right;
+    position: relative;
+    top: 10px;
+}
+
+#article-listing .article-listing-readmore {
+    float: right;
+    position: relative;
+    top: -15px;
+}
+
+#article-listing .article-listing-summary {
+    padding-left: 20px;
+    padding-right: 50px;
+    text-align: justify;
+    text-justify: inter-ideograph;
 }
 
 @media (max-width: 767px){

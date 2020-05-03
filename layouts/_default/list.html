@@ -1,17 +1,13 @@
 {{ define "main" -}}
 
 <h1>{{ .Title }}</h1>
-<ul id="list-with-title">
+<ul id="article-listing">
     {{ range .Data.Pages.GroupByDate "2006" -}}
     <h3 class="listing-title">{{ .Key }}</h3>
     {{ range .Pages -}}
-    <ul class="listing">
-        <div class="listing-post">
-            <span class="listing-title"><a href="{{ .RelPermalink }}" title="{{ .Title }}">{{ .Title }}</a></span>
-            <span class="listing-date">{{.Date.Format "Jan 2" }}</span>
-        </div>
-    </ul>
+    {{ partial "parts/article-listing.html" . -}}
     {{ end -}}
     {{ end -}}
 </ul>
+
 {{ end -}}

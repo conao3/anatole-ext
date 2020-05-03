@@ -1,0 +1,9 @@
+<ul class="article-listing-item">
+    <span class="article-listing-title"><a href="{{ .RelPermalink }}" title="{{ .Title }}">{{ .Title }}</a></span>
+    <span class="article-listing-date">{{.Date.Format "Jan 2" }}</span>
+    <br>
+    <div class="article-listing-summary">{{ .Summary -}}</div>
+    {{ if .Truncated -}}
+    <span class="article-listing-readmore"><a href="{{ .RelPermalink }}">Read More…</a></span>
+    {{ end -}}
+</ul>
