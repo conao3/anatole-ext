@@ -49,12 +49,12 @@ code {
 
 #sidebar-footer {
     text-align: center;
-    font-size: 12px;
+    font-size: 11px;
     position: absolute;
     width: 100%;
+    left: 0;
     bottom: 0;
-    margin: 0 auto;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     background: #f4f4f2;
 }
 
@@ -72,7 +72,7 @@ code {
     margin: 40px 0;
 }
 
-@media (max-width: 768px){
+@media (max-width: 767px){
     #sidebar {
         width: 100%;
         height: auto;
