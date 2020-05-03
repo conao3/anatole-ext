@@ -8,8 +8,9 @@ hasCJKLanguage = true
 googleAnalytics = "UA-165099679-2"
 
 [params]
-  description = "広島大学を中心に活動するLispコミュニティ"
+  author = "Hiroshima.lisp"
   Copyright = "CC0"
+  description = "広島大学を中心に活動するLispコミュニティ"
 
 ## Social links
 [[params.socialIcons]]
