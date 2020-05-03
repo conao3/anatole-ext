@@ -24,7 +24,7 @@
                     </div>
                 </div>
                 <div id="content" class="col-md-8 offset-md-4">
-                    <nav class="nav justify-content-center">
+                    <nav id="content-nav" class="nav justify-content-center">
                         {{ range .Site.Menus.main -}}
                         {{ $icon := printf "<i data-feather=\"%s\"></i>" .Pre -}}
                         {{ $text := print $icon " " .Name | safeHTML -}}

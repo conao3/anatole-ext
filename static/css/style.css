@@ -26,6 +26,7 @@ code {
     padding-top: 240px;
     position: fixed;
     height: 100%;
+    border-right: 1px solid #eaeaea;
 }
 
 #sidebar-title img.logo {
@@ -55,6 +56,10 @@ code {
     margin: 0 auto;
     padding-bottom: 10px;
     background: #f4f4f2;
+}
+
+#content-nav {
+    border-bottom: 1px solid #eaeaea;
 }
 
 @media (max-width: 768px){
