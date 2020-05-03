@@ -17,13 +17,14 @@ code {
     color: #D4356B;
 }
 
-#sidebar-title {
+#sidebar {
+    text-align: center;
     padding-top: 240px;
 }
 
 #sidebar-title img.logo {
-    width:127px;
-    border-radius:50%;
+    width: 127px;
+    border-radius: 50%;
 }
 
 #sidebar-title h1.home a {
@@ -37,4 +38,8 @@ code {
 
 #sidebar-social-links a {
     color: #C24B31;
+}
+
+.container-fluid {
+    max-width: 1500px;
 }
