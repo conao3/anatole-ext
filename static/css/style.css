@@ -50,6 +50,7 @@ code {
     padding: 0;
     position: relative;
     left: -4px;
+    margin-bottom: 5rem;
 }
 
 #sidebar-social-links a {
@@ -149,10 +150,38 @@ code {
     margin-bottom: 5rem;
 }
 
+#TableOfContents-wrapper {
+}
+
+#TableOfContents-title {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    display: none;
+}
+
+#TableOfContents ul {
+    font-size: 0.9rem;
+    line-height: 1rem;
+    list-style: none;
+    padding: 0 1rem;
+}
+
+#TableOfContents a {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#TableOfContents a:hover {
+    color: #5ABAD6;
+    border-bottom: 1px solid;
+}
+
 @media (min-width: 992px) {
     .container-fluid {
         padding: 0 2rem;
     }
+}
+
+@media (max-width: 1119px) {
 }
 
 @media (max-width: 991px) {
@@ -198,5 +227,9 @@ code {
 
     #article-info span {
         display: block;
+    }
+
+    #article-tableofcontents {
+        display: none;
     }
 }
