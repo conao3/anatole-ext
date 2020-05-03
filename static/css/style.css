@@ -7,6 +7,7 @@ body {
     color: rgba(0, 0, 0, 0.8);
     background: #f4f4f2;
     margin: 0 auto 30px auto;
+    word-wrap: break-word;
 }
 
 h1 {
