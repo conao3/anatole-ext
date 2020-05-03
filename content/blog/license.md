@@ -19,12 +19,12 @@ draft: false
 
 ## Dependent materials/sources license
 - Hiroshima.lisp icon made by [freepik](https://www.flaticon.com/authors/freepik) from [www.flaticon.com](https://www.flaticon.com/) ([Term of use](https://www.freepikcompany.com/legal)).
-- Font Awesome - [SIL OFL 1.1](http://scripts.sil.org/OFL)
-- Feather icons - [MIT](https://github.com/feathericons/feather/blob/master/LICENSE)
-- jQuery - [MIT](https://jquery.org/license/)
-- Bootstrap - [MIT](https://github.com/twbs/bootstrap/blob/v4.0.0/LICENSE)
-- Hugo - [Apache 2.0](https://gohugo.io/about/license/)
-- Go - [BSD](https://golang.org/LICENSE)
+- [Font Awesome](https://fontawesome.com/) - [SIL OFL 1.1](http://scripts.sil.org/OFL)
+- [Feather icons](https://feathericons.com/) - [MIT](https://github.com/feathericons/feather/blob/master/LICENSE)
+- [jQuery](https://jquery.org/) - [MIT](https://jquery.org/license/)
+- [Bootstrap](https://getbootstrap.com/) - [MIT](https://github.com/twbs/bootstrap/blob/v4.0.0/LICENSE)
+- [Hugo](https://gohugo.io/) - [Apache 2.0](https://gohugo.io/about/license/)
+- [Go](https://golang.org/) - [BSD](https://golang.org/LICENSE)
 
 ## Respected Hugo blog theme
 - [lxndrblz/anatole](https://github.com/lxndrblz/anatole) - [MIT](https://github.com/lxndrblz/anatole/blob/master/LICENSE)
