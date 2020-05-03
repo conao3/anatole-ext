@@ -30,8 +30,10 @@ code {
 }
 
 #sidebar-title img.logo {
-    width: 127px;
+    width: 130px;
     border-radius: 50%;
+    position: relative;
+    left: -4px;
 }
 
 #sidebar-title h1.home a {
@@ -41,6 +43,8 @@ code {
 
 #sidebar-social-links {
     padding: 0;
+    position: relative;
+    left: -4px;
 }
 
 #sidebar-social-links a {
