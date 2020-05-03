@@ -1,7 +1,16 @@
+/* https://color.adobe.com/ja/create/color-wheel - 二重分割補色 */
+/* <#D35D3F>, #D48F4A, #55D460, #5ABAD6, #D4356B */
+/* <#C24B31> */
+
 body {
-    color: rgba(0, 0, 0, 0.8);
     font-family: 'Verdana', sans-serif;
+    color: rgba(0, 0, 0, 0.8);
+    background: #f4f4f2;
     margin: 0 auto 30px auto;
+}
+
+a {
+    color: #5ABAD6;
 }
 
 #sidebar-title {
@@ -23,5 +32,5 @@ body {
 }
 
 #sidebar-social-links a {
-    color: rgba(0, 0, 0, 0.8);
+    color: #C24B31;
 }
