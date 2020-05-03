@@ -28,14 +28,17 @@ googleAnalytics = "UA-165099679-2"
 [[params.socialIcons]]
   icon = "fa-slack"
   url = "https://hiroshima-lisp.slack.com/join/shared_invite/enQtNjE0NTc5ODE0MTk3LThiZTM0MjVlMGY4ODQ4ZWQxZTIxZmViYmQ1NDIzN2JlYmNmNWNmOTA0N2I3ODdjMjdlYWU2MjZkZTBhZGU3OGQ"
+  style= "font-size:1.1em"
 
 [[params.socialIcons]]
   icon = "fa-envelope"
   url = "/blog/mail"
+  style= "font-size:0.9em"
 
 [[params.socialIcons]]
   icon = "fa-balance-scale"
   url = "/blog/license"
+  style= "font-size:0.8em"
 
 [params.math]
   global = false  # options: true, false. Enable math support globally, default: false. You can always enable math on per page.

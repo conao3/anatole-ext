@@ -13,7 +13,7 @@
                     <ul id="sidebar-social-links">
                         {{ range $item := .Site.Params.socialIcons -}}
                         <a href="{{ $item.url }}">
-                            <i class="fa {{ $item.icon }}"></i>
+                            <i class="fa {{ $item.icon }}"{{ with $item.style }} style="{{$item.style}}"{{ end }}></i>
                         </a>
                         {{ end -}}
                     </ul>
