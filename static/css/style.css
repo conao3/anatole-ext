@@ -59,7 +59,11 @@ code {
 }
 
 #content-nav {
-    border-bottom: 1px solid #eaeaea;
+    padding-top: 20px;
+}
+
+#content-main {
+    margin-top: 40px;
 }
 
 @media (max-width: 768px){
