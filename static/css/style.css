@@ -17,9 +17,15 @@ code {
     color: #D4356B;
 }
 
+#content {
+    max-width: 1000px;
+}
+
 #sidebar {
     text-align: center;
     padding-top: 240px;
+    position: fixed;
+    height: 100%;
 }
 
 #sidebar-title img.logo {
@@ -43,8 +49,23 @@ code {
 #sidebar-footer {
     text-align: center;
     font-size: 12px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    background: #f4f4f2;
 }
 
-.container-fluid {
-    max-width: 1500px;
+@media (max-width: 768px){
+    #sidebar {
+        width: 100%;
+        padding-top: 120px;
+        position: absolute;
+        border-right: none;
+    }
+
+    #content {
+        margin-top: 430px;
+    }
 }
