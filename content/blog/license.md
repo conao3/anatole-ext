@@ -25,3 +25,8 @@ draft: false
 - Bootstrap - [MIT](https://github.com/twbs/bootstrap/blob/v4.0.0/LICENSE)
 - Hugo - [Apache 2.0](https://gohugo.io/about/license/)
 - Go - [BSD](https://golang.org/LICENSE)
+
+## Respected Hugo blog theme
+- [lxndrblz/anatole](https://github.com/lxndrblz/anatole) - [MIT](https://github.com/lxndrblz/anatole/blob/master/LICENSE)
+- [hi-caicai/farbox-theme-Anatole](https://github.com/hi-caicai/farbox-theme-Anatole) - [MIT](https://github.com/hi-caicai/farbox-theme-Anatole)
+- [kbaidya21/liva-hugo](https://github.com/kbaidya21/liva-hugo) - [MIT](https://github.com/kbaidya21/liva-hugo/blob/master/LICENSE)
