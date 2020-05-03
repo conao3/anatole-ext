@@ -54,12 +54,15 @@ Just push master, auto deploy via netlify.
 
 * Information
 ** License
-The text is published under CC0.
-But the cited source respects the license of the cited source.
-#+begin_example
-  CC0
-  https://creativecommons.org/share-your-work/public-domain/cc0/
-#+end_example
+- All articles (sentence) are distributed under CC BY.
+  #+begin_example
+    Creative Commons Attribution 4.0 International Public License (CC BY)
+    Copyright (c) Hiroshima.lisp - https://lisp.netlify.app
+    https://creativecommons.org/licenses/by/4.0/legalcode
+  #+end_example
+
+- All source code are distributed under CC0.
+- All cited source code respects the license of the cited source.
 
 ** Icon license
 Icon made by [[https://www.flaticon.com/authors/freepik][freepik]] from [[https://www.flaticon.com/][www.flaticon.com]].

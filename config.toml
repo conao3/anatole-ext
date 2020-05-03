@@ -9,7 +9,7 @@ googleAnalytics = "UA-165099679-2"
 
 [params]
   author = "Hiroshima.lisp"
-  Copyright = "CC0"
+  Copyright = "CC BY"
   description = "広島大学を中心に活動するLispコミュニティ"
 
 ## Social links
@@ -32,6 +32,10 @@ googleAnalytics = "UA-165099679-2"
 [[params.socialIcons]]
   icon = "fa-envelope"
   url = "/blog/mail"
+
+[[params.socialIcons]]
+  icon = "fa-balance-scale"
+  url = "/blog/license"
 
 [params.math]
   global = false  # options: true, false. Enable math support globally, default: false. You can always enable math on per page.
