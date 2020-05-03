@@ -40,6 +40,11 @@ code {
     color: #C24B31;
 }
 
+#sidebar-footer {
+    text-align: center;
+    font-size: 12px;
+}
+
 .container-fluid {
     max-width: 1500px;
 }
