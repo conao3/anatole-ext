@@ -67,11 +67,23 @@ code {
 }
 
 #content-nav {
-    padding-top: 20px;
+    position: absolute;
+    top: 15px;
+    right: 0;
+}
+
+#content-nav .nav-link {
+    color: rgba(0, 0, 0, 0.6);
+    padding: 5px 20px;
+}
+
+#content-nav .nav-link:hover{
+    color: #5ABAD6;
+    border-bottom: 1px solid;
 }
 
 #content-main {
-    margin-top: 40px;
+    margin-top: 80px;
 }
 
 #footer-for-small {
@@ -133,7 +145,13 @@ code {
     margin-bottom: 80px
 }
 
-@media (max-width: 767px){
+@media (min-width: 1140px) {
+    .container-fluid {
+        padding: 20px;
+    }    
+}
+
+@media (max-width: 767px) {
     #sidebar {
         width: 100%;
         height: auto;
