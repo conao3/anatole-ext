@@ -149,10 +149,14 @@ code {
 @media (min-width: 1140px) {
     .container-fluid {
         padding: 20px;
-    }    
+    }
 }
 
 @media (max-width: 767px) {
+    h1 { font-size: 2.0rem; }
+    h2 { font-size: 1.8rem; }
+    h3 { font-size: 1.7rem; }
+
     #sidebar {
         width: 100%;
         height: auto;
@@ -166,11 +170,21 @@ code {
     }
 
     #content {
-        margin-top: 300px;
+        margin-top: 290px;
     }
 
     #content-nav {
-        display: none;
+        position: static;
+        justify-content: center;
+        margin-top: 5px;
+    }
+
+    #content-nav .nav-link {
+        color: #5ABAD6;
+    }
+
+    #content-main {
+        margin-top: 50px;
     }
 
     #article-info span {
