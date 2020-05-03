@@ -112,6 +112,22 @@ code {
     text-justify: inter-ideograph;
 }
 
+#article-info {
+    font-size: 0.8em;
+    color: rgba(0, 0, 0, 0.6);
+    padding-bottom: 15px;
+}
+
+#article-info span {
+    padding-right: 15px;
+}
+
+#article-info .article-info-tag {
+    border: 1px solid;
+    border-radius: 4px;
+    padding: 1px 3px;
+}
+
 @media (max-width: 767px){
     #sidebar {
         width: 100%;
