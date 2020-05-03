@@ -66,15 +66,30 @@ code {
     margin-top: 40px;
 }
 
+#footer-for-small {
+    text-align: center;
+    font-size: 13px;
+    margin: 40px 0;
+}
+
 @media (max-width: 768px){
     #sidebar {
         width: 100%;
-        padding-top: 120px;
+        height: auto;
+        padding-top: 70px;
         position: absolute;
         border-right: none;
     }
 
+    #sidebar-footer {
+        display: none;
+    }
+
     #content {
-        margin-top: 430px;
+        margin-top: 300px;
+    }
+
+    #content-nav {
+        display: none;
     }
 }
