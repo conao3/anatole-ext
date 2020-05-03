@@ -142,6 +142,7 @@ code {
     border: 1px solid;
     border-radius: 0.25rem;
     padding: 0.05rem 0.2rem;
+    margin-left: 0.1rem;
 }
 
 #article-content {
