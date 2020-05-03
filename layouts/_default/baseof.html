@@ -26,9 +26,7 @@
                 <div id="content" class="col-md-8 offset-md-4">
                     <nav id="content-nav" class="nav justify-content-center">
                         {{ range .Site.Menus.main -}}
-                        {{ $icon := printf "<i data-feather=\"%s\"></i>" .Pre -}}
-                        {{ $text := print $icon " " .Name | safeHTML -}}
-                        <a class="nav-link" href="{{ .URL }}">{{ $text }}</a>
+                        <a class="nav-link" href="{{ .URL }}">{{ .Name }}</a>
                         {{ end -}}
                     </nav>
                     <div id="content-main">
