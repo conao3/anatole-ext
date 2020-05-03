@@ -7,7 +7,7 @@
     {{ range .Pages -}}
     <ul class="listing">
         <div class="listing-post">
-            <span class="listing-title"><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></span>
+            <span class="listing-title"><a href="{{ .RelPermalink }}" title="{{ .Title }}">{{ .Title }}</a></span>
             <span class="listing-date">{{.Date.Format "Jan 2" }}</span>
         </div>
     </ul>
