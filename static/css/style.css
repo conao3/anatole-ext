@@ -9,7 +9,6 @@ body {
 }
 
 h1 {
-    margin-left: -10px;
     margin-bottom: 1rem;
 }
 
@@ -31,7 +30,7 @@ code {
 
 #content {
     max-width: 800px;
-    padding-left: 30px;
+    padding-left: 20px;
     padding-bottom: 10vh;
 }
 
