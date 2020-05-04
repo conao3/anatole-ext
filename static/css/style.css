@@ -86,8 +86,7 @@ code {
 
 #content-nav {
     float: right;
-    position: relative;
-    right: -15px;
+    margin-right: -15px;
 }
 
 #content-nav .nav-link {
