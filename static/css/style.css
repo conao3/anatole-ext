@@ -185,9 +185,13 @@ code {
         padding: 0 15px;
     }
 
+    h1 {
+        margin-left: 0;
+    }
+
     #content {
         margin-left: 0;
-        padding-left: 1rem;
+        padding-left: 15px;
     }
 }
 
@@ -196,26 +200,27 @@ code {
     h2 { font-size: 1.8rem; }
     h3 { font-size: 1.7rem; }    /* bootstrap default */
 
+    #TableOfContents-wrapper {
+        display: none;
+    }
+
     #sidebar {
-        width: 100%;
-        padding-top: 5rem;
-        position: absolute;
+        /* width: 100%; */
         border-right: none;
+    }
+
+    #sidebar-title {
+        margin-top: 5rem;
+        position: static;
     }
 
     #sidebar-footer {
         display: none;
     }
 
-    #content {
-        margin-top: 17rem;
-        padding-left: 1rem;
-    }
-
     #content-nav {
         float: none;
         justify-content: center;
-        margin-top: 5px;
     }
 
     #content-nav .nav-link {
@@ -224,10 +229,6 @@ code {
 
     #content-main {
         margin-top: 1rem;
-    }
-
-    #TableOfContents-wrapper {
-        display: none;
     }
 }
 
