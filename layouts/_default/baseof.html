@@ -5,7 +5,7 @@
         {{ partial "header.html" . -}}
         <main>
             <div id="main-row" class="row">
-                <div id="sidebar" class="col-lg-2 col-xl-3">
+                <div id="sidebar" class="col-lg-3">
                     <div id="sidebar-title">
                         <img class="logo" src="/images/logo.svg">
                         <h1><a class="home" href="/">{{ .Site.Title }}</a></h1>
@@ -23,7 +23,7 @@
                         <div>Cited source codes are under the original licence</div>
                     </div>
                 </div>
-                <div id="content" class="col-lg-8 offset-lg-2 col-xl-7 offset-xl-3">
+                <div id="content" class="col-lg-7 offset-lg-3">
                     <div class="content-nav-wrapper">
                         <nav id="content-nav" class="nav">
                             {{ range .Site.Menus.main -}}
@@ -35,7 +35,7 @@
                         {{ block "main" . -}}{{ end -}}
                     </div>
                 </div>
-                <dev id="TableOfContents-wrapper" class="col-lg-2 col-xl-2">
+                <dev id="TableOfContents-wrapper" class="col-lg-2">
                     <div id="TableOfContents-spacer"></div>
                     <div id="TableOfContents-sticky">
                         <div id="TableOfContents-title">Table of Contents</div>
