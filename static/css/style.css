@@ -156,9 +156,13 @@ code {
     margin-bottom: 5rem;
 }
 
+#TableOfContents-wrapper {
+}
+
 #TableOfContents-title {
     font-size: 1rem;
     color: rgba(0, 0, 0, 0.7);
+    margin-top: 3rem;
     margin-bottom: 0.5rem;
 }
 
