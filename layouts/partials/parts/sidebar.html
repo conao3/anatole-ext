@@ -1,6 +1,6 @@
 <aside id="sidebar" class="col-lg-3">
     <div id="sidebar-title">
-        <img id="sidebar-title-logo" src="/images/logo.svg">
+        <img id="sidebar-title-logo" src="/images/{{ $.Site.Params.logo }}">
         <a id="sidebar-title-home" href="/">{{ .Site.Title }}</a>
         <ul id="sidebar-social-links">
             {{ range $item := .Site.Params.socialIcons -}}
