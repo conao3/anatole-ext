@@ -52,7 +52,7 @@ googleAnalytics = "UA-165099679-2"
     url = "/"
     weight = 1
   [[menu.main]]
-    name = "Blog"
+    name = "Archive"
     url = "/blog/"
     weight = 2
   [[menu.main]]
