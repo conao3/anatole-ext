@@ -126,9 +126,8 @@ code {
 
 #article-listing .article-listing-readmore {
     float: right;
-    position: relative;
-    top: 0.5rem;
-    right: -1rem;
+    margin-top: 0.5rem;
+    margin-right: -1.5rem;
     background: #f4f4f2;
 }
 
