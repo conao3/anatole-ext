@@ -6,7 +6,8 @@ body {
     font-family: 'Verdana', sans-serif;
     color: rgba(0, 0, 0, 0.8);
     background: #f4f4f2;
-    word-wrap: break-word;
+    text-align: justify;
+    text-justify: inter-ideograph;
 }
 
 h1 {
@@ -131,10 +132,8 @@ code {
 }
 
 #article-listing .article-listing-summary {
-    padding-left: 1rem;
-    padding-right: 1.5rem;
-    text-align: justify;
-    text-justify: inter-ideograph;
+    margin-left: 1rem;
+    margin-right: 1.5rem;
 }
 
 #article-info {
@@ -238,12 +237,7 @@ code {
     h3 { font-size: 1.5rem; }
     h4 { font-size: 1.5rem; }   /* bootstrap default */
 
-    #sidebar {
-        padding-top: 2.5rem;
-    }
-
     #content {
-        margin-top: 15rem;
     }
 
     #article-info span {
@@ -259,10 +253,8 @@ code {
     }
 
     #article-listing .article-listing-summary {
-        padding-left: 1rem;
-        padding-right: 1rem;
-        text-align: justify;
-        text-justify: inter-ideograph;
+        margin-left: 15px;
+        margin-right: 0;
     }
 
     #article-listing .article-listing-readmore {
