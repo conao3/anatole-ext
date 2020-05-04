@@ -6,13 +6,11 @@
         <main class="row">
             {{ partial "parts/sidebar.html" . -}}
             <div id="content" class="col-lg-9">
-                <div id="content-nav-wrapper">
-                    <nav id="content-nav" class="nav">
-                        {{ range .Site.Menus.main -}}
-                        <a class="nav-link" href="{{ .URL }}">{{ .Name }}</a>
-                        {{ end -}}
-                    </nav>
-                </div>
+                <nav id="content-nav" class="nav">
+                    {{ range .Site.Menus.main -}}
+                    <a class="nav-link" href="{{ .URL }}">{{ .Name }}</a>
+                    {{ end -}}
+                </nav>
                 <div id="content-main">
                     {{ block "main" . -}}{{ end -}}
                 </div>
