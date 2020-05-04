@@ -9,11 +9,11 @@
             </a>
             {{ end -}}
         </ul>
-        {{ if .IsPage -}}
-        <dev id="TableOfContents-wrapper">
+        {{ if .Params.toc -}}
+        <div id="TableOfContents-wrapper">
             <div id="TableOfContents-title">Table of Contents</div>
             {{ .TableOfContents -}}
-        </dev>
+        </div>
         {{ end -}}
     </div>
     <div id="sidebar-spacer"></div>
