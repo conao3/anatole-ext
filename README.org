@@ -11,58 +11,38 @@
 [[https://www.patreon.com/conao3][https://img.shields.io/badge/patreon-become%20a%20patron-orange.svg?logo=patreon&style=flat-square]]
 [[https://twitter.com/conao_3][https://img.shields.io/badge/twitter-@conao__3-blue.svg?logo=twitter&style=flat-square]]
 [[https://conao3-support.slack.com/join/shared_invite/enQtNjUzMDMxODcyMjE1LWUwMjhiNTU3Yjk3ODIwNzAxMTgwOTkxNmJiN2M4OTZkMWY0NjI4ZTg4MTVlNzcwNDY2ZjVjYmRiZmJjZDU4MDE][https://img.shields.io/badge/chat-on_slack-blue.svg?logo=slack&style=flat-square]]
-[[https://app.netlify.com/sites/lisp/deploys][https://api.netlify.com/api/v1/badges/848233ef-a374-46f0-a148-3348b19d826c/deploy-status]]
 
 * Table of Contents
 - [[#description][Description]]
-- [[#install][Install]]
 - [[#usage][Usage]]
 - [[#customize][Customize]]
 - [[#information][Information]]
-  - [[#community][Community]]
-  - [[#contribution][Contribution]]
-  - [[#migration][Migration]]
   - [[#license][License]]
+  - [[#icon-license][Icon license]]
   - [[#author][Author]]
-  - [[#contributors][Contributors]]
 
 * Description
-[[https://lisp.netlify.app][anatole-ext]] blog source.
+Extended Hugo blog theme respects [[https://github.com/lxndrblz/anatole][anatole]].  Working sample is [[https://lisp.netlify.app][here]].
 
 * Usage
-** Add article
-Create article from template.
+Add this repository as submodule and fix config.toml
 
 #+begin_src shell
-  hugo new blog/{{blog-title}}
+  mkdir themes
+  git submodule add https://github.com/conao3/anatole-ext.git themes/anatole-ext
 #+end_src
 
-** Local server
-Serve blog data via local server.
-
-#+begin_src shell
-  hugo server -D
-#+end_src
-
-** Deploy
-Deploy [[https://lisp.netlify.app][lisp.netlify.app]].
-Just push master, auto deploy via netlify.
-
-#+begin_src shell
-  git push origin master
+#+begin_src toml
+  theme = "anatole-ext"
 #+end_src
 
 * Information
 ** License
-- All articles (sentence) are distributed under CC BY.
-  #+begin_example
-    Creative Commons Attribution 4.0 International Public License (CC BY)
-    Copyright (c) anatole-ext - https://lisp.netlify.app
-    https://creativecommons.org/licenses/by/4.0/legalcode
-  #+end_example
-
-- All source code are distributed under CC0.
-- All cited source code respects the license of the cited source.
+#+begin_example
+  MIT
+  Copyright (c) Naoya Yamashita - https://conao3.com
+  https://github.com/conao3/anatole-ext/blob/master/LICENSE
+#+end_example
 
 ** Icon license
 Icon made by [[https://www.flaticon.com/authors/freepik][freepik]] from [[https://www.flaticon.com/][www.flaticon.com]].
