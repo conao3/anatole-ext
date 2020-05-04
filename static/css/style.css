@@ -54,6 +54,11 @@ code {
     font-size: 2em;
     display: block;
     margin-left: 10px;
+    text-decoration: none;
+}
+
+#sidebar-title-home:hover {
+    color: #5ABAD6;
 }
 
 #sidebar-social-links {
