@@ -114,8 +114,8 @@ code {
 }
 
 #article-listing .article-listing-item {
+    margin-bottom: 2rem;
     padding-left: 1rem;
-    padding-bottom: 2rem;
 }
 
 #article-listing .article-listing-date {
