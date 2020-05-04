@@ -5,31 +5,7 @@
         {{ partial "header.html" . -}}
         <main>
             <div id="main-row" class="row">
-                <div id="sidebar" class="col-lg-3">
-                    <div id="sidebar-title">
-                        <img id="sidebar-title-logo" src="/images/logo.svg">
-                        <a id="sidebar-title-home" href="/">{{ .Site.Title }}</a>
-                        <ul id="sidebar-social-links">
-                            {{ range $item := .Site.Params.socialIcons -}}
-                            <a href="{{ $item.url }}">
-                                <i class="fa {{ $item.icon }}"{{ with $item.style }} style="{{$item.style}}"{{ end }}></i>
-                            </a>
-                            {{ end -}}
-                        </ul>
-                        {{ if .IsPage -}}
-                        <dev id="TableOfContents-wrapper">
-                            <div id="TableOfContents-title">Table of Contents</div>
-                            {{ .TableOfContents -}}
-                        </dev>
-                        {{ end -}}
-                    </div>
-                    <div id="sidebar-spacer"></div>
-                    <div id="sidebar-footer">
-                        <div>Article: {{ .Site.Params.Copyright }} - {{ .Site.Params.author }} {{ now.Format "2006"}}</div>
-                        <div>Source code: CC0 - {{ .Site.Params.author }} {{ now.Format "2006"}}</div>
-                        <div>Cited source codes are under the original licence</div>
-                    </div>
-                </div>
+                {{ partial "parts/sidebar.html" . -}}
                 <div id="content" class="col-lg-9">
                     <div class="content-nav-wrapper">
                         <nav id="content-nav" class="nav">
