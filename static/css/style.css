@@ -216,9 +216,14 @@ code {
         display: none;
     }
 
+    #content {
+        max-width:1000px;
+    }
+
     #content-nav {
         float: none;
         justify-content: center;
+        margin-right: 0;
     }
 
     #content-nav .nav-link {
