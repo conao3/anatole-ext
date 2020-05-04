@@ -22,8 +22,14 @@
                         <div>Source code: CC0 - {{ .Site.Params.author }} {{ now.Format "2006"}}</div>
                         <div>Cited source codes are under the original licence</div>
                     </div>
+                    <dev id="TableOfContents-sidebar-wrapper" class="col-xl-2">
+                        <div id="TableOfContents-sidebar-sticky">
+                            <div id="TableOfContents-sidebar-title">Table of Contents</div>
+                            {{ .TableOfContents -}}
+                        </div>
+                    </dev>
                 </div>
-                <div id="content" class="col-xl-7 col-lg-9 offset-lg-3">
+                <div id="content" class="col-xl-7 col-lg-9">
                     <div class="content-nav-wrapper">
                         <nav id="content-nav" class="nav">
                             {{ range .Site.Menus.main -}}
