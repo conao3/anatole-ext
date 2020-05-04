@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="icon" href="/images/{{ $.Site.Params.logo }}">
     {{ range $item := .Site.Params.css -}}
-    {{ $path := print "/" $item.name -}}
-    <link rel="stylesheet" href="{{ $path }}">
+    <link rel="stylesheet" href="/css/{{ $item.name }}">
     {{ end -}}
     {{ $title := print .Title " | " .Site.Title -}}
     {{ if .IsHome -}}{{ $title = .Site.Title }}{{ end -}}
