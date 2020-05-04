@@ -77,6 +77,13 @@ code {
     background: #f4f4f2;
 }
 
+#footer-for-smartphone {
+    text-align: center;
+    font-size: 0.7rem;
+    margin: 2rem 0;
+    display: none;
+}
+
 #content-nav {
     float: right;
     position: relative;
@@ -96,12 +103,6 @@ code {
 
 #content-main {
     margin-top: 5rem;
-}
-
-#footer-for-small {
-    text-align: center;
-    font-size: 0.7rem;
-    margin: 2rem 0;
 }
 
 #article-listing {
