@@ -4,6 +4,7 @@
     <br>
     <div class="article-listing-summary">{{ .Summary -}}
         {{ if .Truncated -}}
+        &nbsp…
         <span class="article-listing-readmore"><a href="{{ .RelPermalink }}">Read More…</a></span>
         {{ end -}}
     </div>
