@@ -115,8 +115,7 @@ code {
 #article-listing .article-listing-date {
     color: rgba(0, 0, 0, 0.6);
     float: right;
-    position: relative;
-    top: 10px;
+    margin-top: 10px;
 }
 
 #article-listing .article-listing-readmore {
