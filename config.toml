@@ -5,7 +5,7 @@ enableEmoji = true
 enableInlineShortcodes = true
 enableGitInfo = true
 hasCJKLanguage = true
-googleAnalytics = "UA-165099679-2"
+googleAnalytics = "UA-888888888-8"
 
 [params]
   author = "Hiroshima.lisp"
