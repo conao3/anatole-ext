@@ -9,7 +9,7 @@
             </a>
             {{ end -}}
         </ul>
-        {{ if .Params.toc -}}
+        {{ if .IsPage -}}
         <div id="TableOfContents-wrapper">
             <div id="TableOfContents-title">Table of Contents</div>
             {{ .TableOfContents -}}
