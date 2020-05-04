@@ -236,10 +236,6 @@ code {
     #content-main {
         margin-top: 1rem;
     }
-
-    #article-info span {
-        display: block;
-    }
 }
 
 @media (max-width: 575px) {
@@ -254,6 +250,10 @@ code {
 
     #content {
         margin-top: 15rem;
+    }
+
+    #article-info span {
+        display: block;
     }
 
     #article-listing {
