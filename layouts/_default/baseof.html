@@ -9,27 +9,28 @@
                     <div id="sidebar-title">
                         <img class="logo" src="/images/logo.svg">
                         <h1><a class="home" href="/">{{ .Site.Title }}</a></h1>
-                    </div>
-                    <ul id="sidebar-social-links">
-                        {{ range $item := .Site.Params.socialIcons -}}
-                        <a href="{{ $item.url }}">
-                            <i class="fa {{ $item.icon }}"{{ with $item.style }} style="{{$item.style}}"{{ end }}></i>
-                        </a>
+                        <ul id="sidebar-social-links">
+                            {{ range $item := .Site.Params.socialIcons -}}
+                            <a href="{{ $item.url }}">
+                                <i class="fa {{ $item.icon }}"{{ with $item.style }} style="{{$item.style}}"{{ end }}></i>
+                            </a>
+                            {{ end -}}
+                        </ul>
+                        {{ if .IsPage -}}
+                        <dev id="TableOfContents-wrapper">
+                            <div id="TableOfContents-title">Table of Contents</div>
+                            {{ .TableOfContents -}}
+                        </dev>
                         {{ end -}}
-                    </ul>
+                    </div>
+                    <div id="sidebar-spacer"></div>
                     <div id="sidebar-footer">
                         <div>Article: {{ .Site.Params.Copyright }} - {{ .Site.Params.author }} {{ now.Format "2006"}}</div>
                         <div>Source code: CC0 - {{ .Site.Params.author }} {{ now.Format "2006"}}</div>
                         <div>Cited source codes are under the original licence</div>
                     </div>
-                    <dev id="TableOfContents-sidebar-wrapper" class="col-xl-2">
-                        <div id="TableOfContents-sidebar-sticky">
-                            <div id="TableOfContents-sidebar-title">Table of Contents</div>
-                            {{ .TableOfContents -}}
-                        </div>
-                    </dev>
                 </div>
-                <div id="content" class="col-xl-7 col-lg-9">
+                <div id="content" class="col-lg-9">
                     <div class="content-nav-wrapper">
                         <nav id="content-nav" class="nav">
                             {{ range .Site.Menus.main -}}
@@ -41,13 +42,6 @@
                         {{ block "main" . -}}{{ end -}}
                     </div>
                 </div>
-                <dev id="TableOfContents-wrapper" class="col-xl-2">
-                    <div id="TableOfContents-spacer"></div>
-                    <div id="TableOfContents-sticky">
-                        <div id="TableOfContents-title">Table of Contents</div>
-                        {{ .TableOfContents -}}
-                    </div>
-                </dev>
             </div>
         </main>
         {{ partial "footer.html" . -}}

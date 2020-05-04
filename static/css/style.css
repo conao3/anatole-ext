@@ -23,35 +23,36 @@ code {
 
 #content {
     max-width: 800px;
-    margin-left: 25%;
     padding-left: 2em;
     padding-bottom: 10vh;
 }
 
 #sidebar {
     text-align: center;
-    padding-top: 15rem;
-    position: fixed;
-    height: 100%;
+    height: auto;
     border-right: 1px solid #eaeaea;
+}
+
+#sidebar-title {
+    margin-top: 15rem;
+    position: sticky;
+    top: 3rem;
 }
 
 #sidebar-title img.logo {
     width: 130px;
     border-radius: 50%;
-    position: relative;
-    left: -4px;
 }
 
 #sidebar-title a.home {
     color: rgba(0, 0, 0, 0.8);
     font-size: 0.8em;
+    position: relative;
+    left: 4px;
 }
 
 #sidebar-social-links {
     padding: 0;
-    position: relative;
-    left: -4px;
     margin-bottom: 2.5rem;
 }
 
@@ -60,13 +61,9 @@ code {
 }
 
 #sidebar-footer {
-    text-align: center;
     font-size: 0.7rem;
-    position: absolute;
-    width: 100%;
-    left: 0;
-    bottom: 0;
-    padding-bottom: 2.5rem;
+    position: sticky;
+    top: 90vh;
     background: #f4f4f2;
 }
 
@@ -152,19 +149,13 @@ code {
     margin-bottom: 5rem;
 }
 
-#TableOfContents-spacer {
-    height: 12rem;
-}
-
-#TableOfContents-sticky {
-    position: sticky;
-    top: 5rem;
+#TableOfContents {
 }
 
 #TableOfContents-title {
     font-size: 1rem;
+    color: rgba(0, 0, 0, 0.7);
     margin-bottom: 0.5rem;
-    display: none;
 }
 
 #TableOfContents ul {
@@ -183,14 +174,6 @@ code {
     border-bottom: 1px solid;
 }
 
-#TableOfContents-sidebar-wrapper {
-    display: none;
-}
-
-#TableOfContents-sidebar-title {
-    display: none;
-}
-
 #teams-button a{
     margin: 0.2rem 0.1rem;
 }
@@ -205,28 +188,6 @@ code {
     #content {
         margin-left: 0;
         padding-left: 1rem;
-    }
-
-    #TableOfContents-wrapper {
-        display: none;
-    }
-
-    #sidebar {
-        margin-top: 15rem;
-        padding-top: 0;
-        position: sticky;
-        top: 3rem;
-    }
-
-    #sidebar-footer {
-        position: static;
-        width: 100%;
-        padding-bottom: 2.5rem;
-        background: #f4f4f2;
-    }
-
-    #TableOfContents-sidebar-wrapper {
-        display: block;
     }
 }
 
@@ -263,6 +224,10 @@ code {
 
     #content-main {
         margin-top: 1rem;
+    }
+
+    #TableOfContents-wrapper {
+        display: none;
     }
 }
 
