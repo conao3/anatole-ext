@@ -12,7 +12,10 @@ h1 {
     margin-bottom: 1rem;
 }
 
-a {
+a,
+#sidebar-title-home:hover,
+#content-nav .nav-link:hover,
+#TableOfContents a:hover {
     color: #5ABAD6;
 }
 
@@ -60,10 +63,6 @@ code {
     text-decoration: none;
 }
 
-#sidebar-title-home:hover {
-    color: #5ABAD6;
-}
-
 #sidebar-social-links {
     margin-top: 0.5rem;
     padding: 0;
@@ -77,7 +76,6 @@ code {
     font-size: 0.7rem;
     position: sticky;
     top: 90vh;
-    background: #f4f4f2;
 }
 
 #footer-for-smartphone {
@@ -99,7 +97,6 @@ code {
 }
 
 #content-nav .nav-link:hover {
-    color: #5ABAD6;
     border-bottom: 1px solid;
 }
 
@@ -130,7 +127,6 @@ code {
     float: right;
     margin-top: 0.5rem;
     margin-right: -1.5rem;
-    background: #f4f4f2;
 }
 
 #article-listing .article-listing-summary {
@@ -188,10 +184,6 @@ code {
 #TableOfContents a {
     color: rgba(0, 0, 0, 0.5);
     text-decoration: none;
-}
-
-#TableOfContents a:hover {
-    color: #5ABAD6;
 }
 
 @media (max-width: 1199px) {
