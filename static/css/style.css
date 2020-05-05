@@ -34,6 +34,10 @@ pre {
     line-height: 1.3rem;
 }
 
+p > a {
+    margin: 0 0.2rem;
+}
+
 #main-container {
     padding: 0 20px;
 }
