@@ -1,8 +1,8 @@
 {{ define "main" -}}
 
 <h1>{{ .Title }}</h1>
-<ul id="article-listing">
-    <h3 class="listing-title">Recent blogs</h3>
+<h2 class="listing-title">Recent blogs</h2>
+<ul class="article-listing">
     {{ range first 10 .Site.RegularPages -}}
     {{ if eq .Type "blog" -}}
     {{ partial "parts/article-listing.html" . -}}

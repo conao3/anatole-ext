@@ -1,13 +1,13 @@
 {{ define "main" -}}
 
 <h1>{{ .Title }}</h1>
-<ul id="article-listing">
-    {{ range .Data.Pages.GroupByDate "2006" -}}
-    <h3 class="listing-title">{{ .Key }}</h3>
+{{ range .Data.Pages.GroupByDate "2006" -}}
+<h2 class="listing-title">{{ .Key }}</h2>
+<ul class="article-listing">
     {{ range .Pages -}}
     {{ partial "parts/article-listing.html" . -}}
     {{ end -}}
-    {{ end -}}
 </ul>
+{{ end -}}
 
 {{ end -}}
