@@ -172,11 +172,13 @@ code {
 
 #TableOfContents {
     margin-left: 25%;
+    overflow-y: auto;
+    max-height: 50vh;
 }
 
 #TableOfContents ul {
     font-size: 0.9rem;
-    line-height: 1rem;
+    line-height: 1.3rem;
     list-style: none;
     padding: 0 1rem;
 }
