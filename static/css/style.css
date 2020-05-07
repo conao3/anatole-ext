@@ -38,8 +38,10 @@ p > a {
     margin: 0 0.2rem;
 }
 
-img {
+figure > img {
+    margin: auto;
     max-width: 100%;
+    display: block;
 }
 
 #main-container {
