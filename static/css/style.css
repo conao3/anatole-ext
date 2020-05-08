@@ -155,8 +155,6 @@ figure > img {
 .article-listing .article-listing-summary {
     margin-left: 1rem;
     margin-right: 1.5rem;
-    text-align: justify;
-    text-justify: inter-ideograph;
 }
 
 #article-info {
