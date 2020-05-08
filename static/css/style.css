@@ -251,6 +251,10 @@ figure > img {
     text-decoration: none;
 }
 
+#teams-button {
+    line-height: 3rem;
+}
+
 @media (max-width: 1199px) {
     #main-container {
         padding: 0 15px;
