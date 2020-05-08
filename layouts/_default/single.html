@@ -5,7 +5,7 @@
 {{ $dateTime := .PublishDate.Format "2006-01-02" -}}
 {{ $dateFormat := .Site.Params.dateFormat | default "Jan 2, 2006" -}}
 
-<div id="article-info">
+<aside id="article-info">
     <span class="article-info-reading-time">{{ .ReadingTime }}-minute to read</span>
     <span id="article-info-date">
         Posted at — <time datetime="{{ $dateTime }}">{{ .PublishDate.Format $dateFormat }}</time>
@@ -22,7 +22,7 @@
         {{ end -}}
         {{ end -}}
     </span>
-</div>
+</aside>
 
 <div id="article-content">
 {{ .Content -}}
