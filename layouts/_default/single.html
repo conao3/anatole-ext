@@ -7,6 +7,9 @@
 
 <div id="article-info">
     <span class="article-info-reading-time">{{ .ReadingTime }}-minute to read</span>
+    <span id="article-info-date">
+        Posted at — <time datetime="{{ $dateTime }}">{{ .PublishDate.Format $dateFormat }}</time>
+    </span>
     <span id="article-info-tags">
         Tags — 
         {{ with .Params.tags -}}
@@ -15,9 +18,6 @@
         <a class="article-info-tag" href="{{ $href }}">{{ . }}</a>
         {{ end -}}
         {{ end -}}
-    </span>
-    <span id="article-info-date">
-        Posted at — <time datetime="{{ $dateTime }}">{{ .PublishDate.Format $dateFormat }}</time>
     </span>
 </div>
 
