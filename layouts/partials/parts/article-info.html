@@ -24,7 +24,7 @@
             Published: <time datetime="{{ $dateTime }}">{{ .PublishDate.Format $dateFormat }}</time>
         </span>
         <span id="article-info-date">
-            Update: <time datetime="{{ $updateDateTime }}">{{ .PublishDate.Format $updateDateFormat }}</time>
+            Updated: <time datetime="{{ $updateDateTime }}">{{ .PublishDate.Format $updateDateFormat }}</time>
         </span>
         <div id="article-info-tags">
             {{ with .Section -}}
