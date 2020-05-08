@@ -255,6 +255,16 @@ figure > img {
     line-height: 3rem;
 }
 
+.fa-hatena:before {
+    content: "B!";
+    font-family: Verdana;
+    font-weight: bold
+}
+
+#footer-social-link i {
+    margin-right: 0.5rem;
+}
+
 @media (max-width: 1199px) {
     #main-container {
         padding: 0 15px;

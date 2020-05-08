@@ -1,4 +1,25 @@
 <footer>
+    <div id="footer-social-link">
+        <a class="btn btn-outline-dark" href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink | safeJS }}">
+            <i class="fa fa-facebook-f"></i>Facebook
+        </a>
+        <a class="btn btn-outline-dark" href="http://twitter.com/intent/tweet?text=%22{{ .Title | safeJS }}%20%7C%20{{ .Site.Title }}%22%20{{ .Permalink | safeJS }}">
+            <i class="fa fa-twitter"></i>Twitter
+        </a>
+        <a class="btn btn-outline-dark" href="http://b.hatena.ne.jp/entry/{{ .Permalink | safeJS }}">
+            <i class="fa-hatena"></i>Hatena
+        </a>
+        <a class="btn btn-outline-dark" href="https://getpocket.com/save?url={{ .Permalink | safeJS }}">
+            <i class="fa fa-get-pocket"></i>Pocket
+        </a>
+        <a class="btn btn-outline-dark" href="/index.xml">
+            <i class="fa fa-rss"></i>RSS
+        </a>
+        <a class="btn btn-outline-dark" href="mailto:?subject={{ .Title }}&amp;body={{ .Permalink | safeURL }}">
+            <i class="fa fa-envelope"></i>Mail
+        </a>
+    </div>
+
     {{ $related := .Site.RegularPages.Related . | first 5 -}}
     {{ with $related -}}
     <h4>See Also</h4>
