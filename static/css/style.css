@@ -169,14 +169,11 @@ figure > img {
 }
 
 #article-info {
-    position: relative;
-    margin-left: 3.27rem;
-    top: -1.6rem;
     line-height: 1.2rem;
 }
 
 #article-info span {
-    margin-right: 0.5rem;
+    margin-right: 1rem;
 }
 
 #article-info .article-info-section,
@@ -192,23 +189,23 @@ figure > img {
 }
 
 #article-info-tags {
+    margin-top: 0.2rem;
     margin-left: -0.1rem;
-    line-height: 1.7rem;    
+    line-height: 1.6rem;    
 }
 
-#article-info-authors .article-info-author {
+#article-info-authors {
     margin-bottom: 0.5rem;
 }
 
-#article-info-authors .article-info-author:last-child .article-info-author-name {
-    vertical-align: 0.6rem;
-}
-
 #article-info-authors .article-info-author-icon {
-    display: inline-block;
     width: 2.5rem;
     margin-right: 0.5rem;
     border-radius: 10%;
+}
+
+#article-info-authors .article-info-author-name {
+    margin-right: 1rem;
 }
 
 #article-content {
