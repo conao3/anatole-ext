@@ -3,7 +3,7 @@
     {{ partial "head.html" . -}}
     <body id="main-container" class="container-fluid">
         {{ partial "header.html" . -}}
-        <main id="main-row" class="row">
+        <div id="main-row" class="row">
             {{ partial "parts/sidebar.html" . -}}
             <div id="content" class="col-lg-9">
                 <nav id="content-nav" class="nav">
@@ -11,11 +11,11 @@
                     <a class="nav-link" href="{{ .URL }}">{{ .Name }}</a>
                     {{ end -}}
                 </nav>
-                <div id="content-main">
+                <main id="content-main">
                     {{ block "main" . -}}{{ end -}}
-                </div>
+                </main>
                 {{ partial "footer.html" . -}}
             </div>
-        </main>
+        </div>
     </body>
 </html>
