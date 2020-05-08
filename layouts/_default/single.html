@@ -10,12 +10,14 @@
 <aside id="article-info-wrapper">
     <div id="article-info-authors">
         {{ range .Params.author -}}
-        {{ if (fileExists (printf "static/icons/%s.jpg" . )) }}
-        <img class="article-info-author-icon" src="/icons/{{ . }}.jpg">
-        {{ else }}
-        <img class="article-info-author-icon" src="/icons/default.jpg">
-        {{ end -}}
-        <div class="article-info-author">{{ . }}</div>
+        <div class="article-info-author">
+            {{ if (fileExists (printf "static/icons/%s.jpg" . )) }}
+            <img class="article-info-author-icon" src="/icons/{{ . }}.jpg">
+            {{ else }}
+            <img class="article-info-author-icon" src="/icons/default.jpg">
+            {{ end -}}
+            <span class="article-info-author-name">{{ . }}</span>
+        </div>
         {{ end -}}
     </div>
     <div id="article-info">
