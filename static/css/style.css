@@ -208,10 +208,6 @@ figure > img {
     margin-right: 1rem;
 }
 
-#article-content {
-    margin-bottom: 3rem;
-}
-
 #article-next {
     float: right;
 }
@@ -262,7 +258,7 @@ figure > img {
 }
 
 #footer-social-link {
-    margin-bottom: 3rem;
+    margin: 3rem 0;
 }
 
 #footer-social-link i {
