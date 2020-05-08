@@ -208,6 +208,10 @@ figure > img {
     margin-right: 1rem;
 }
 
+#article-prev {
+    float: left;
+}
+
 #article-next {
     float: right;
 }

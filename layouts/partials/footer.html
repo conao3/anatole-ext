@@ -30,14 +30,14 @@
     </ul>
     {{ end -}}
 
-    {{ with .PrevInSection -}}
-    <div id="article-previous">
-        <span class="article-footer-nav">Prev: </span><a href="{{ .Permalink }}">{{ .Title }}</a>
-    </div>
-    {{ end -}}
     {{ with .NextInSection -}}
     <div id="article-next">
         <a href="{{ .Permalink }}">{{ .Title }}</a><span class="article-footer-nav"> :Next</span>
+    </div>
+    {{ end -}}
+    {{ with .PrevInSection -}}
+    <div id="article-prev">
+        <span class="article-footer-nav">Prev: </span><a href="{{ .Permalink }}">{{ .Title }}</a>
     </div>
     {{ end -}}
 
