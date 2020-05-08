@@ -188,6 +188,14 @@ figure > img {
     margin-bottom: 5rem;
 }
 
+#article-next {
+    float: right;
+}
+
+.article-footer-nav {
+    font-size: 1.1rem;
+}
+
 #TableOfContents-wrapper {
     text-align: left;
     width: 100%;
