@@ -6,8 +6,19 @@
 {{ else }}
 <script>
  MathJax = {
-     macros: {
-         ssqrt: ['\\sqrt{\\smash[b]{\\mathstrut #1}}', 1]
+     chtml: {
+         scale: 1.3,
+         matchFontHeight: false,
+     },
+     loader: {load: ['[tex]/physics']},
+     tex: {
+         packages: {'[+]': ['physics']},
+         inlineMath: [['$', '$'], ['\\(', '\\)']],
+         macros: {
+             RR: "{\\bf R}",
+             bold: ["{\\bf #1}", 1],
+             ssqrt: ['\\sqrt{\\smash[b]{\\mathstrut #1}}', 1]
+         }
      }
  };
 </script>
