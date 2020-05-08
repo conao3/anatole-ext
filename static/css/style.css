@@ -165,7 +165,7 @@ figure > img {
     font-size: 0.9rem;
     color: rgba(0, 0, 0, 0.6);
     margin-top: 1rem;
-    margin-bottom: -2em;
+    margin-bottom: 2em;
 }
 
 #article-info {
@@ -259,6 +259,10 @@ figure > img {
     content: "B!";
     font-family: Verdana;
     font-weight: bold
+}
+
+#footer-social-link {
+    margin-bottom: 3rem;
 }
 
 #footer-social-link i {
