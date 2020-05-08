@@ -1,0 +1,41 @@
+{{ $dateTime := .PublishDate.Format "2006-01-02" -}}
+{{ $dateFormat := .Site.Params.dateFormat | default "Jan 2, 2006" -}}
+{{ $updateDateTime := .Lastmod.Format "2006-01-02" -}}
+{{ $updateDateFormat := .Site.Params.dateFormat | default "Jan 2, 2006" -}}
+
+<aside id="article-info-wrapper">
+    {{ if site.Params.showArticleAuthors -}}
+    <div id="article-info-authors">
+        {{ range .Params.author -}}
+        <span class="article-info-author">
+            {{ if (fileExists (printf "static/icons/%s.jpg" . )) }}
+            <img class="article-info-author-icon" src="/icons/{{ . }}.jpg">
+            {{ else }}
+            <img class="article-info-author-icon" src="/icons/default.jpg">
+            {{ end -}}
+            <span class="article-info-author-name">{{ . }}</span>
+        </span>
+        {{ end -}}
+    </div>
+    {{ end -}}
+    <div id="article-info">
+        <span class="article-info-reading-time">{{ .ReadingTime }}-minute to read</span>
+        <span id="article-info-date">
+            Published: <time datetime="{{ $dateTime }}">{{ .PublishDate.Format $dateFormat }}</time>
+        </span>
+        <span id="article-info-date">
+            Update: <time datetime="{{ $updateDateTime }}">{{ .PublishDate.Format $updateDateFormat }}</time>
+        </span>
+        <div id="article-info-tags">
+            {{ with .Section -}}
+            <a class="article-info-section" href={{ . | absURL }}>{{ . }}</a>
+            {{ end -}}
+            {{ with .Params.tags -}}
+            {{ range . -}}
+            {{ $href := print "tags/" . -}}
+            <a class="article-info-tag" href="{{ $href | urlize | absURL }}">{{ . }}</a>
+            {{ end -}}
+            {{ end -}}
+        </div>
+    </div>
+</aside>
