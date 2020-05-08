@@ -165,7 +165,7 @@ figure > img {
     font-size: 0.9rem;
     color: rgba(0, 0, 0, 0.6);
     margin-top: 1rem;
-    margin-bottom: -1em;
+    margin-bottom: -2em;
 }
 
 #article-info {
@@ -176,7 +176,7 @@ figure > img {
 }
 
 #article-info span {
-    margin-right: 1rem;
+    margin-right: 0.5rem;
 }
 
 #article-info .article-info-section,
@@ -189,6 +189,11 @@ figure > img {
 
 #article-info .article-info-section {
     color: #D35D3F;
+}
+
+#article-info-tags {
+    margin-left: -0.1rem;
+    line-height: 1.7rem;    
 }
 
 #article-info-authors .article-info-author {

@@ -4,6 +4,8 @@
 
 {{ $dateTime := .PublishDate.Format "2006-01-02" -}}
 {{ $dateFormat := .Site.Params.dateFormat | default "Jan 2, 2006" -}}
+{{ $updateDateTime := .Lastmod.Format "2006-01-02" -}}
+{{ $updateDateFormat := .Site.Params.dateFormat | default "Jan 2, 2006" -}}
 
 <aside id="article-info-wrapper">
     <div id="article-info-authors">
@@ -19,10 +21,12 @@
     <div id="article-info">
         <span class="article-info-reading-time">{{ .ReadingTime }}-minute to read</span>
         <span id="article-info-date">
-            Posted at — <time datetime="{{ $dateTime }}">{{ .PublishDate.Format $dateFormat }}</time>
+            <time datetime="{{ $dateTime }}">{{ .PublishDate.Format $dateFormat }}</time>
         </span>
-        <span id="article-info-tags">
-            Tags —
+        <span id="article-info-date">
+            Update: <time datetime="{{ $updateDateTime }}">{{ .PublishDate.Format $updateDateFormat }}</time>
+        </span>
+        <div id="article-info-tags">
             {{ with .Section -}}
             <a class="article-info-section" href={{ . | absURL }}>{{ . }}</a>
             {{ end -}}
@@ -32,7 +36,7 @@
             <a class="article-info-tag" href="{{ $href | urlize | absURL }}">{{ . }}</a>
             {{ end -}}
             {{ end -}}
-        </span>
+        </div>
     </div>
 </aside>
 
