@@ -2,12 +2,15 @@
 /* <#D35D3F>, #D48F4A, #55D460, #5ABAD6, #D4356B */
 /* <#C24B31> */
 
+html {
+    font-size: 15px;
+}
+
 body {
     font-family: 'Verdana', sans-serif;
     color: rgba(0, 0, 0, 0.8);
     background: #f4f4f2;
-    font-size: 15px;
-    line-height: 1.5rem;
+    line-height: 1.7rem;
 }
 
 h1 { font-size: 2.50rem; }
@@ -31,7 +34,7 @@ code {
 
 pre {
     padding: 1rem;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     line-height: 1.3rem;
 }
 
