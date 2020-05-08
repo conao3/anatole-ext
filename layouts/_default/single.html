@@ -8,6 +8,7 @@
 {{ $updateDateFormat := .Site.Params.dateFormat | default "Jan 2, 2006" -}}
 
 <aside id="article-info-wrapper">
+    {{ if site.Params.showArticleAuthors -}}
     <div id="article-info-authors">
         {{ range .Params.author -}}
         <span class="article-info-author">
@@ -20,6 +21,7 @@
         </span>
         {{ end -}}
     </div>
+    {{ end -}}
     <div id="article-info">
         <span class="article-info-reading-time">{{ .ReadingTime }}-minute to read</span>
         <span id="article-info-date">
