@@ -161,11 +161,18 @@ figure > img {
     margin-right: 1.5rem;
 }
 
-#article-info {
+#article-info-wrapper {
     font-size: 0.9rem;
     color: rgba(0, 0, 0, 0.6);
-    margin-top: 10px;
-    margin-bottom: 30px;
+    margin-top: 1rem;
+    margin-bottom: -1em;
+}
+
+#article-info {
+    position: relative;
+    margin-left: 3.27rem;
+    top: -1.2rem;
+    line-height: 1.2rem;
 }
 
 #article-info span {
@@ -182,6 +189,18 @@ figure > img {
 
 #article-info .article-info-section {
     color: #D35D3F;
+}
+
+#article-info-authors .article-info-author {
+    display: inline-block;
+    margin-left: 0.5rem;
+    vertical-align: 0.5rem;
+}
+
+#article-info-authors .article-info-author-icon {
+    display: inline-block;
+    width: 2.5rem;
+    border-radius: 10%;
 }
 
 #article-content {
