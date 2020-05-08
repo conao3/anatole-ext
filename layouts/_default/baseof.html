@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+{{ with .Site.LanguageCode }}<html lang="{{ . }}">{{ else }}<html>{{ end }}
     {{ partial "head.html" . -}}
     <body id="main-container" class="container-fluid">
         {{ partial "header.html" . -}}
