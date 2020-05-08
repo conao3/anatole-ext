@@ -13,12 +13,12 @@
     <span id="article-info-tags">
         Tags —
         {{ with .Section -}}
-        <a class="article-info-section" href={{ print (absURL .) -}}>{{ . }}</a>
+        <a class="article-info-section" href={{ . | absURL }}>{{ . }}</a>
         {{ end -}}
         {{ with .Params.tags -}}
         {{ range . -}}
-        {{ $href := print (absURL "tags/") (urlize .) -}}
-        <a class="article-info-tag" href="{{ $href }}">{{ . }}</a>
+        {{ $href := print "tags/" . -}}
+        <a class="article-info-tag" href="{{ $href | urlize | absURL }}">{{ . }}</a>
         {{ end -}}
         {{ end -}}
     </span>
@@ -41,12 +41,12 @@
 
     {{ with .PrevInSection -}}
     <div id="article-previous">
-        <span class="article-footer-nav">Prev: </span><a href="{{.Permalink}}">{{.Title}}</a>
+        <span class="article-footer-nav">Prev: </span><a href="{{ .Permalink }}">{{ .Title }}</a>
     </div>
     {{ end -}}
     {{ with .NextInSection -}}
     <div id="article-next">
-        <a href="{{.Permalink}}">{{.Title}}</a><span class="article-footer-nav"> :Next</span>
+        <a href="{{ .Permalink }}">{{ .Title }}</a><span class="article-footer-nav"> :Next</span>
     </div>
     {{ end -}}
 </aside>

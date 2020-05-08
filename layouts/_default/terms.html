@@ -4,7 +4,7 @@
 
 <div id="teams-button">
 {{ range .Data.Terms.ByCount -}}
-<a class="btn btn-outline-dark" href="{{ .Page.RelPermalink }}">
+<a class="btn btn-outline-dark" href="{{ .Page.Permalink }}">
     <span class="badge badge-dark">{{ .Count }}</span> {{ .Page.Title }}
 </a>
 {{ end -}}
