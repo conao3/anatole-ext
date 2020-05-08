@@ -11,7 +11,10 @@
         Posted at — <time datetime="{{ $dateTime }}">{{ .PublishDate.Format $dateFormat }}</time>
     </span>
     <span id="article-info-tags">
-        Tags — 
+        Tags —
+        {{ with .Section -}}
+        <a class="article-info-section" href={{ print (absURL .) -}}>{{ . }}</a>
+        {{ end -}}
         {{ with .Params.tags -}}
         {{ range . -}}
         {{ $href := print (absURL "tags/") (urlize .) -}}
