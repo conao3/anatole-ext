@@ -1,4 +1,25 @@
 <footer>
+    {{ $related := .Site.RegularPages.Related . | first 5 -}}
+    {{ with $related -}}
+    <h4>See Also</h4>
+    <ul>
+        {{ range . -}}
+        <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+        {{ end -}}
+    </ul>
+    {{ end -}}
+
+    {{ with .PrevInSection -}}
+    <div id="article-previous">
+        <span class="article-footer-nav">Prev: </span><a href="{{ .Permalink }}">{{ .Title }}</a>
+    </div>
+    {{ end -}}
+    {{ with .NextInSection -}}
+    <div id="article-next">
+        <a href="{{ .Permalink }}">{{ .Title }}</a><span class="article-footer-nav"> :Next</span>
+    </div>
+    {{ end -}}
+
     <div id="footer-for-smartphone">
         <div>Article: {{ .Site.Params.Copyright }} - {{ .Site.Params.author }} {{ now.Format "2006"}}</div>
         <div>Source code: CC0 - {{ .Site.Params.author }} {{ now.Format "2006"}}</div>
