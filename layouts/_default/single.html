@@ -24,9 +24,9 @@
     </span>
 </aside>
 
-<div id="article-content">
+<article id="article-content">
 {{ .Content -}}
-</div>
+</article>
 
 {{ $related := .Site.RegularPages.Related . | first 5 -}}
 {{ with $related -}}
