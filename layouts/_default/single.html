@@ -25,19 +25,19 @@
 </aside>
 
 <article id="article-content">
-{{ .Content -}}
+    {{ .Content -}}
 </article>
 
-{{ $related := .Site.RegularPages.Related . | first 5 -}}
-{{ with $related -}}
-<aside id="article-related">
+<aside id="article-footer">
+    {{ $related := .Site.RegularPages.Related . | first 5 -}}
+    {{ with $related -}}
     <h3>See Also</h3>
     <ul>
         {{ range . -}}
         <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
         {{ end -}}
     </ul>
+    {{ end -}}
 </aside>
-{{ end -}}
 
 {{ end -}}
