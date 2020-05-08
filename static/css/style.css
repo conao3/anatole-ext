@@ -48,6 +48,12 @@ figure > img {
     display: block;
 }
 
+blockquote {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 1rem 2rem;
+    padding-bottom: 0.1rem;
+}
+
 #main-container {
     padding: 0 20px;
 }
