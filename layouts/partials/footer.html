@@ -1,4 +1,6 @@
 <footer>
+    {{ if .IsPage -}}
+
     <div id="footer-social-link">
         <a class="btn btn-outline-dark" href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink | safeJS }}">
             <i class="fa fa-facebook-f"></i>Facebook
@@ -46,6 +48,9 @@
         <div>Source code: CC0 - {{ .Site.Params.author }} {{ now.Format "2006"}}</div>
         <div>Cited source codes are under the original licence</div>
     </div>
+
+    {{ end -}}
+
     <!--
          <script src="/js/feather.min.js"></script>
          <script> feather.replace() </script>
