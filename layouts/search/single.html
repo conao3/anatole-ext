@@ -3,7 +3,7 @@
 {{ end -}}
 
 var data = [
-{{ range $index, $page := .Site.Pages -}}
+{{ range $index, $page := .Site.RegularPages -}}
 {
 url: {{ $page.Permalink | jsonify }},
 title: {{ $page.Title | jsonify }},
