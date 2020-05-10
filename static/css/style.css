@@ -167,6 +167,11 @@ blockquote {
     margin-right: 1.5rem;
 }
 
+.article-listing .article-listing-strong {
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.2)
+}
+
 #article-info-wrapper {
     font-size: 0.9rem;
     color: rgba(0, 0, 0, 0.6);
@@ -273,6 +278,10 @@ blockquote {
 
 #footer-social-link i {
     margin-right: 0.5rem;
+}
+
+#search-form {
+    margin: 2rem;
 }
 
 @media (max-width: 1199px) {

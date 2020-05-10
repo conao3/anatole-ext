@@ -1,9 +1,18 @@
 {{ define "main" }}
 
 <h1>{{ .Page.Title }}</h1>
-<input onkeyup="search(this.value)" size="15" autocomplete="off" autofocus placeholder="検索ワード" />
-<span id="inputWord"></span> <span id="resultCount"></span>
-<div id="result"></div>
+
+<form>
+    <div id="search-form" class="form-group">
+        <input class="form-control" onkeyup="search(this.value)" autocomplete="off" autofocus placeholder="Search" />
+        <span id="inputWord"></span><span id="resultCount"></span>
+    </div>
+    <ul id="result" class="article-listing">
+        {{ range .Pages -}}
+        {{ partial "parts/article-listing.html" . -}}
+        {{ end -}}
+    </ul>
+</form>
 
 <script src="data.js"></script>
 
@@ -49,16 +58,16 @@
  }
 
  function createEntry(url, title, body, startPos, endPos) {
-     return '<div class="item">' +
-            '<a class="item_title" href="' + url + '">' + title + '</a>' +
-            '<div class="item_excerpt">' + excerpt(body, startPos, endPos) + '</div>' +
-            '</div>';
+     return '<ul class="article-listing-item">' +
+            '<a class="article-listing-title" href="' + url + '">' + title + '</a>' +
+            '<div class="article-listing-summary">' + excerpt(body, startPos, endPos) + '</div>' +
+            '</ul>';
  }
 
  function excerpt(body, startPos, endPos) {
      return [
          body.substring(startPos - 30, startPos),
-         '<b>', body.substring(startPos, endPos), '</b>',
+         '<span class="article-listing-strong">', body.substring(startPos, endPos), '</span>',
          body.substring(endPos, endPos + 200)
      ].join('');
  }
