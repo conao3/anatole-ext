@@ -7,11 +7,7 @@
         <input class="form-control" onkeyup="search(this.value)" autocomplete="off" autofocus placeholder="Search" />
         <span id="inputWord"></span><span id="resultCount"></span>
     </div>
-    <ul id="result" class="article-listing">
-        {{ range .Pages -}}
-        {{ partial "parts/article-listing.html" . -}}
-        {{ end -}}
-    </ul>
+    <ul id="result" class="article-listing"></ul>
 </form>
 
 <script src="data.js"></script>
