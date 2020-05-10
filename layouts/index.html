@@ -1,6 +1,22 @@
 {{ define "main" -}}
 
 <h1>{{ .Title }}</h1>
+
+{{ if .Site.IsServer -}}
+<h2>List of draft</h2>
+<ul>
+    {{ range (where .Site.Pages ".Draft" true) -}}
+    <li>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        <small class="float-right">
+            {{ range .Params.tags }}#{{ . }} {{ end -}}
+            {{ .Lastmod.Format "2006-01-02" }}
+        </small>
+    </li>
+    {{ end -}}
+</ul>
+{{ end -}}
+
 <h2 class="listing-title">Recent blogs</h2>
 <ul class="article-listing">
     {{ range first 10 .Site.RegularPages -}}
