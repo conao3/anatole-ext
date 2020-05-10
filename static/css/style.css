@@ -330,6 +330,7 @@ blockquote {
     }
 
     #content {
+        margin-top: -5rem;
         max-width:1000px;
     }
 
@@ -372,6 +373,7 @@ blockquote {
 
     #content {
         word-wrap: break-word;
+        margin-top: -9rem;
     }
 
     #article-info span {
