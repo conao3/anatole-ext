@@ -284,6 +284,10 @@ blockquote {
     margin: 2rem;
 }
 
+mjx-container[jax="CHTML"][display="true"] {
+    margin: 3rem 0 !important;
+}
+
 @media (max-width: 1199px) {
     #main-container {
         padding: 0 15px;
