@@ -70,6 +70,19 @@ blockquote {
     padding-bottom: 10vh;
 }
 
+/* sidebar + main col(1000px) = 1343px */
+@media (max-width: 1343px) {
+    #content {
+        max-width: 75%;
+    }
+}
+
+@media (max-width: 991px) {
+    #content {
+        max-width: 100%;
+    }
+}
+
 #sidebar {
     text-align: center;
     height: auto;
@@ -333,10 +346,6 @@ mjx-container[jax="CHTML"][display="true"] {
 
     #sidebar-footer {
         display: none;
-    }
-
-    #content {
-        max-width:1000px;
     }
 
     #content-nav {
