@@ -330,7 +330,6 @@ blockquote {
     }
 
     #content {
-        margin-top: -5rem;
         max-width:1000px;
     }
 
@@ -338,7 +337,6 @@ blockquote {
         float: none;
         justify-content: center;
         margin-right: 0;
-        margin-top: -20px;
     }
 
     #content-nav .nav-link {
@@ -373,7 +371,6 @@ blockquote {
 
     #content {
         word-wrap: break-word;
-        margin-top: -9rem;
     }
 
     #article-info span {
