@@ -47,6 +47,11 @@ p > a {
     margin: 0 0.2rem;
 }
 
+p a:first-of-type{
+    margin-left: 0;
+    margin-right: 0.2rem;
+}
+
 figure > img {
     margin: 3rem auto;
     max-width: 100%;
