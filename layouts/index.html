@@ -21,7 +21,7 @@
 <ul class="article-listing">
     {{ range first 10 .Site.RegularPages -}}
     {{ if eq .Type "blog" -}}
-    {{ partial "parts/article-listing.html" . -}}
+    {{ partial "parts/article-listing-with-summary.html" . -}}
     {{ end -}}
     {{ end -}}
 </ul>

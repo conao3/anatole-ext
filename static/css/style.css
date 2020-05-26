@@ -161,12 +161,11 @@ blockquote {
     padding-left: 0;
 }
 
-.article-listing .article-listing-title {
+.article-listing .article-listing-title-big {
     font-size: 1.5rem;
 }
 
 .article-listing .article-listing-item {
-    margin-bottom: 2rem;
     padding-left: 1rem;
 }
 
@@ -182,6 +181,7 @@ blockquote {
 }
 
 .article-listing .article-listing-summary {
+    margin-bottom: 2rem;
     margin-left: 1rem;
     margin-right: 1.5rem;
 }
