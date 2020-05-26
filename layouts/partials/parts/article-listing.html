@@ -1,4 +1,7 @@
 <ul class="article-listing-item">
     <span class="article-listing-title"><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></span>
-    <span class="article-listing-date">{{.Date.Format "Jan 2" }}</span>
+    <small class="float-right">
+        {{ range .Params.tags }}#{{ . }} {{ end -}}
+        {{ .Lastmod.Format "2006-01-02" }}
+    </small>
 </ul>
