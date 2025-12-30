@@ -1,4 +1,4 @@
-#+title:
+#+title: anatole-ext
 #+author: conao3
 #+date: <2020-05-03 Sun>
 #+options: ^:{}
@@ -14,55 +14,56 @@
 
 * Table of Contents
 - [[#description][Description]]
-- [[#usage][Usage]]
-- [[#customize][Customize]]
+- [[#installation][Installation]]
 - [[#information][Information]]
   - [[#license][License]]
   - [[#icon-license][Icon license]]
   - [[#author][Author]]
 
 * Description
-Extended Hugo blog theme respects [[https://github.com/lxndrblz/anatole][anatole]].  Working sample is [[https://lisp.netlify.app][here]].
+An extended Hugo blog theme based on [[https://github.com/lxndrblz/anatole][anatole]]. This theme brings a clean, minimalist design with additional features and customization options for your blog.
 
-* Usage
-Add this repository as submodule and fix config.toml
+Check out a [[https://lisp.netlify.app][live demo]] to see it in action.
+
+* Installation
+Add this theme as a submodule in your Hugo project:
 
 #+begin_src shell
-  mkdir themes
-  git submodule add https://github.com/conao3/anatole-ext.git themes/anatole-ext
+mkdir themes
+git submodule add https://github.com/conao3/anatole-ext.git themes/anatole-ext
 #+end_src
 
+Then update your =config.toml= to use the theme:
+
 #+begin_src toml
-  theme = "anatole-ext"
+theme = "anatole-ext"
 #+end_src
 
 * Information
 ** License
 #+begin_example
-  MIT
-  Copyright (c) Naoya Yamashita - https://conao3.com
-  https://github.com/conao3/anatole-ext/blob/master/LICENSE
+MIT License
+Copyright (c) Naoya Yamashita - https://conao3.com
+https://github.com/conao3/anatole-ext/blob/master/LICENSE
 #+end_example
 
 ** Icon license
-Icon made by [[https://www.flaticon.com/authors/freepik][freepik]] from [[https://www.flaticon.com/][www.flaticon.com]].
+Icons made by [[https://www.flaticon.com/authors/freepik][Freepik]] from [[https://www.flaticon.com/][Flaticon]].
 
 #+begin_quote
 License summary
+
 Our license allows you to use the content:
+- For commercial and personal projects
+- On digital or printed media
+- For an unlimited number of times and perpetually
+- Anywhere in the world
+- To make modifications and derived works
 
-For commercial and personal projects.
-On digital or printed media.
-For an unlimited number of times and perpetually.
-Anywhere in the world.
-To make modifications and derived works.
-
-*This text is a summary for information only.
-It does not constitute any contractual obligations.
-For more information, please read our Terms of Use before using the content.
+*This text is a summary for information only. It does not constitute any contractual obligations. For more information, please read our Terms of Use before using the content.
 #+end_quote
 
-[[https://www.freepikcompany.com/legal][Terms of use]]
+See the full [[https://www.freepikcompany.com/legal][Terms of Use]].
 
 ** Author
-- Naoya Yamashita ([[https://github.com/conao3][conao3]])
+Naoya Yamashita ([[https://github.com/conao3][conao3]])
